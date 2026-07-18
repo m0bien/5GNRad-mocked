@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" name="tEstimateChannel" skipped="0" tests="1" time="2.0792">
+    <testcase classname="tEstimateChannel" name="channelEstimate_hasExpectedSchema_fullDigital" time="2.0792"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" name="tGetRxWaveform" skipped="0" tests="1" time="0.23619">
+    <testcase classname="tGetRxWaveform" name="matchesTimeInvariantConvolution" time="0.23619"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" name="tPrecompute" skipped="0" tests="2" time="0.15627">
+    <testcase classname="tPrecompute" name="returnsRequiredFields_fullDigital" time="0.12511"/>
+    <testcase classname="tPrecompute" name="returnsRequiredFields_hybrid" time="0.031156"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" name="tRangeDoppler" skipped="0" tests="1" time="0.5932">
+    <testcase classname="tRangeDoppler" name="peakAppearsAtExpectedDoppler_fullDigital" time="0.5932"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" name="tRdmDetection" skipped="0" tests="2" time="1.6664">
+    <testcase classname="tRdmDetection" name="detectsSingleTarget_fullDigital" time="1.2667"/>
+    <testcase classname="tRdmDetection" name="detectsSingleTarget_hybridBartlett" time="0.39966"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" name="tApiCompatibility" skipped="0" tests="1" time="0.68195">
+    <testcase classname="tApiCompatibility" name="publicApiSignaturesMatchBaseline" time="0.68195"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" name="tScenarioRegressionUmaTrp1" skipped="0" tests="1" time="25.7452">
+    <testcase classname="tScenarioRegressionUmaTrp1" name="compareAgainstBaseline" time="25.7452"/>
+  </testsuite>
+  <testsuite errors="0" failures="1" name="tScenarioRegressionUmaTrp13Hybrid" skipped="0" tests="1" time="37.4465">
+    <testcase classname="tScenarioRegressionUmaTrp13Hybrid" name="compareAgainstBaseline" time="37.4465">
+      <failure type="VerificationFailure">Verification failed in tScenarioRegressionUmaTrp13Hybrid/compareAgainstBaseline.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --&gt; Path to failure: &lt;Value&gt;.FN
+        --&gt; The numeric values are not equal using "isequaln".
+        --&gt; Failure table:
+                Actual    Expected    Error    RelativeError
+                ______    ________    _____    _____________
+                                                            
+                  2          0          2           Inf     
+        
+        Actual double:
+             2
+        Expected double:
+             0
+    
+    Actual Value:
+      struct with fields:
+    
+         TP: 3
+         FN: 2
+         FP: 0
+        FPR: 0
+    Expected Value:
+      struct with fields:
+    
+         TP: 5
+         FN: 0
+         FP: 0
+        FPR: 0
+    ------------------
+    Stack Information:
+    ------------------
+    In C:\Users\m_mub\.gemini\antigravity\scratch\5GNRad-main\tests\layerC\tScenarioRegressionUmaTrp13Hybrid.m (tScenarioRegressionUmaTrp13Hybrid.compareAgainstBaseline) at 55Verification failed in tScenarioRegressionUmaTrp13Hybrid/compareAgainstBaseline.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --&gt; The numeric values are not equal using "isequaln".
+    --&gt; Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              3          5         -2          -0.4     
+    
+    Actual Value:
+         3
+    Expected Value:
+         5
+    ------------------
+    Stack Information:
+    ------------------
+    In C:\Users\m_mub\.gemini\antigravity\scratch\5GNRad-main\tests\layerC\tScenarioRegressionUmaTrp13Hybrid.m (tScenarioRegressionUmaTrp13Hybrid.compareAgainstBaseline) at 56</failure>
+    </testcase>
+  </testsuite>
+  <testsuite errors="0" failures="0" name="tPerformanceBudget" skipped="0" tests="1" time="55.7459">
+    <testcase classname="tPerformanceBudget" name="runtimeAndMemoryWithinBudget" time="55.7459"/>
+  </testsuite>
+</testsuites>
